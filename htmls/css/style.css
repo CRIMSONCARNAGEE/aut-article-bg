@@ -1,0 +1,146 @@
+/* GLOBAL */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+*,
+*::before
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Roboto Condensed" ,"Arial", "sans-serif";
+  background-color: #fff;
+  color: #222;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* CONTAINER */
+.container {
+  height: 100%;
+  max-width: 1200px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* GLOBAL WRAPPER */
+.global-wrapper {
+  flex-grow: 1;
+  display: flex;
+  width: 100%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* HERO */
+.hero {
+  display: flex;
+  padding: 24px;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../left-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  max-width: 600px;
+  min-width: 600px;
+  height: 729px;
+  flex-grow: 1;
+}
+.hero-content {
+
+  max-width: 285px;
+}
+.hero-content-heading {
+  padding-bottom: 15px;
+  font-family: "Bebas Neue","Arial","sans-serif";
+  font-weight: 400;
+  width: 285px;
+  height: 58px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 24px;
+  font-weight: 400px;
+  color: #fff;
+}
+.hero-content-heading-bottom {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hero-content-heading-bootom-list {
+  display: flex;
+  font-family: "Bebas Neue","Arial", "sans-serif";
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding: 12px 24px;
+  background-color: #1E90FF;
+  color: #fff;
+  list-style: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero-content-heading-bootom-list:hover {
+  background-color: #1E90FFCC;
+}
+
+.hero-content-heading-bootom-list:active {
+background-color: #1E90FF99;
+}
+
+.hero-content-heading-bottom-text {
+  letter-spacing: 20px;
+}
+
+.hero-content-link-inner {
+  width: 20px;
+  height: 20px;
+  padding-left: 7px;
+  background-image: url(../yulduz.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: ;
+}
+
+
+
+/* REtine */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+.hero {
+  background-image: url(../left-bg@2x.jpg);
+}
+}
